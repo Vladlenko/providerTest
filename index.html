@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slidersContainer">
+            <div class="storageSlider">
+
+                <div class="storageData">
+                    <span>Storage:</span>
+                    <span id="storageCounter">0 GB</span>
+                </div>
+
+                <input id="storage" type="range" min="0" max="1000" step="1" value="0">
+
+                <div class="storageRange">
+                    <span>0</span>
+                    <span>1000</span>
+                </div>
+
+            </div>
+
+            <div class="transferSlider">
+
+                <div class="tranferData">
+                    <span>Transfer:</span>
+                    <span id="transferCounter">0 GB</span>
+                </div>
+
+                <input id="transfer" type="range" min="0" max="1000" step="1" value="0">
+
+                <div class="transferRange">
+                    <span>0</span>
+                    <span>1000</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="graphBox">
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    display: flex;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slidersContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 25%;
+}
+
+.storageData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.storageRange {
+    display: flex;
+    justify-content: space-between;
+}
+
+.storageSlider {
+    width: 50%;
+}
+.transferSlider {
+    width: 50%;
+}
+.tranferData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transferRange {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graphContainer {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.providerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.providerData {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    display: block;
+}
+
+.graph {
+    height: 25px;
+    background-color: grey;
+}
+
+.graphContainer {
+    width: 750px;
+}
+
+#storage {
+    width: 100%;
+}
+#transfer {
+    width: 100%;
+}
+
+.graphBox {
+    height: 100vw;
+}
+@media (max-width:768px) {
+    .wrapper {
+        max-width: 100%;
+    }
+    .graphBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transform: rotate(-90deg);
+        max-width: 768px;
+        padding-right: 10px;
+    }
+    .providerData {
+        transform: rotate(90deg);
+        margin-right: 10px;
+        flex-direction: column-reverse;
+    }
+    .providerData img {
+        margin: 5px;
+    }
+}
